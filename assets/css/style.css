@@ -23,21 +23,9 @@ img {
 /* #endregion general */
 
 /* #region debug */
-.debug #bottom {
-    background-color: red;
-}
-
-.debug #content {
-    background-color: blue;
-}
-
-.debug #top_sidebar {
-    background-color: #adff2f;
-}
-
-.debug #bottom_sidebar {
-    background-color: aqua;
-}
+ .debug #bottom div {
+    border: 1px solid red; 
+ }
 /* #endregion debug */
 
 
@@ -45,20 +33,28 @@ img {
 .d-flex {
     display: flex;
 }
+
+.col-4 {
+    width: calc(100% / 12 * 4);
+}
 /* #endregion utilities  */
 /* #region top  */
 
 /* #region content  */
 
 #content {
+    background-color: var(--main);
     height: calc(100vh - 70px);
     width: calc(100% - 40px);
+    overflow-y: auto;
 }
 /* #endregion content  */
 
 /* #region sidebar */
 #sidebar {
+    background-color: var(--sidebar);
     width: 40px;
+    overflow-y: hidden;
 }
 
 #top_sidebar {
@@ -74,7 +70,9 @@ img {
 /* #region bottom */
 
 #bottom {
+    background-color: var(--footer);
     height: 70px;
+    justify-content: space-between;
 }
 
 /* #endregion bottom */
@@ -118,7 +116,17 @@ img {
 
 /* #region 768px */
 @media screen and (min-width: 768px) {
+    /* #region utilities 768px */
+    .col-md-3 {
+        width: calc(100% /12 * 3)
+    }
 
+
+    .col-md-5 {
+        width: calc(100% /12 * 5)
+    }
+
+    /* #endregion utilities 768px */
     /* #region sidebar 768px */
     
     #top_sidebar {
@@ -148,7 +156,11 @@ img {
 
 /* #region 1200px */
 @media screen and (min-width: 1200px) {
-
+    /* #region utilities 1200px */
+    .col-lg-2 {
+        width: calc(100% /12 *2);
+    }
+    /* #endregion utilities 1200px */
     /* #region sidebar 1200px */
     
     #top_sidebar {
