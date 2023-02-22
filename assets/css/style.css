@@ -1,0 +1,23 @@
+/* #region general */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html:root{
+    --main: #141922;
+    --sidebar: #000000;
+    --upgrade: #080b12;
+    --footer: #282828;
+    --text: #7c7e83;
+    --light:#fafafa; 
+    --highlighted: #adff2f;
+}
+
+img {
+    max-width: 100%;
+}
+
+/* #endregion general */
