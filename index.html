@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.cdnfonts.com/css/circular-std" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
         integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -14,8 +15,36 @@
 
 <body>
     <div id="top" class="d-flex">
-        <div id="sidebar">
-            <div id="top_sidebar"></div>
+        <div id="sidebar" class="d-flex">
+            <div id="top_sidebar" class="d-flex">
+                <div id="logo">
+                    <div id="logo_small" class="icon">
+                        <img src="./assets/img/logo-small.svg" alt="logo spotify">
+                    </div>
+                    <div id="logo_large" class="icon">
+                        <img src="./assets/img/logo.svg" alt="logo spotify">
+                    </div>
+                </div>
+                <div class="icon_container">
+                    <div class="icon">
+                        <img src="./assets/img/home.svg" alt="icon home">
+                    </div>
+                    <span>Home</span>
+                </div>
+                <div class="icon_container">
+                    <div class="icon">
+                        <img src="./assets/img/search.svg" alt="icon search">
+                    </div>
+                    <span> Cerca</span>
+                </div>
+                <div class="icon_container">
+                    <div class="icon">
+                        <img src="./assets/img/libreria.svg" alt="icon library">
+                    </div>
+                    <span> La tua libreria</span>
+                </div>
+
+            </div>
             <div id="bottom_sidebar"></div>
         </div>
 
@@ -50,7 +79,7 @@
         <!-- /bottom_left -->
         <div id="bottom_center" class="col-4 col-md-5  d-flex">
             <div id="bottom_center_up" class="d-flex container-md container-lg">
-                <div id="left_buttons" class="col-4 d-flex"> 
+                <div id="left_buttons" class="col-4 d-flex">
                     <i class="fa-solid fa-shuffle fa-xs"></i>
                     <i class="fa-solid fa-backward-step fa-xs"></i>
                 </div>
@@ -65,7 +94,7 @@
             </div>
 
             <!-- /bottom_center_up -->
-        
+
             <div id="bottom_center_down" class="d-flex">
                 <span>0:25</span>
                 <div class="player_bar">

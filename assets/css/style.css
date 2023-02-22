@@ -16,6 +16,10 @@ html:root {
     --highlighted: #adff2f;
 }
 
+body {
+    font-family: 'Circular Std', sans-serif;
+}
+
 img {
     max-width: 100%;
 }
@@ -68,7 +72,7 @@ img {
 #content {
     background-color: var(--main);
     height: calc(100vh - 70px);
-    width: calc(100% - 40px);
+    width: calc(100% - 30px);
     overflow-y: auto;
 }
 
@@ -77,14 +81,37 @@ img {
 /* #region sidebar */
 #sidebar {
     background-color: var(--sidebar);
-    width: 40px;
+    width: 30px;
     overflow-y: hidden;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
+/* #region top_sidebar */
 #top_sidebar {
+    padding-top: 0.5rem;
     height: calc(100% - 50px);
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
 }
 
+#top_sidebar .icon {
+    width: 15px;
+    margin: 0 0.5rem;
+}
+
+#logo #logo_large {
+    display: none;
+    width: 100px;
+}
+
+#top_sidebar span {
+    display: none;
+    color: var(--text);
+    font-size: 0.6rem;
+}
+/* #endregion top_sidebar */
 #bottom_sidebar {
     height: 50px;
 }
@@ -100,6 +127,10 @@ img {
     height: 70px;
     justify-content: space-between;
     align-items: center;
+    position: fixed;
+    bottom:0;
+    right: 0;
+    width: 100%;
 }
 
 
@@ -221,9 +252,30 @@ img {
         width: 180px;
     }
 
+    /* #region top_sidebar 480px */
     #top_sidebar {
         height: calc(100% - 60px);
+        align-items: start;
+        gap: 0.5rem;
     }
+
+    
+    #top_sidebar .icon_container {
+        display: flex
+    }
+
+    #logo #logo_small {
+        display: none;
+    }
+
+    #logo #logo_large {
+        display: block;
+    }
+    
+    #top_sidebar span {
+        display: block;
+    }
+     /* #endregion top_sidebar 480px */
 
     #bottom_sidebar {
         height: 60px;
@@ -354,6 +406,7 @@ img {
 
     #top_sidebar {
         height: calc(100% - 80px);
+       
     }
 
     #bottom_sidebar {
