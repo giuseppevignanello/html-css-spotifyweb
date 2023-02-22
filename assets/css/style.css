@@ -171,14 +171,43 @@ img {
     font-size: 0.4rem;
 }
 
-#player_bar {
+#bottom_center_down .player_bar {
     width: 80%;
     height: 2px;
     background-color: var(--text);
-    border-radius: 10px;
+    border-radius: 20px;
 }
 
+#bottom_center_down .player_bar .listened {
+    height:100%;
+    width: 20%;
+    background-color: var(--light);
+}
 /* #endregion bottom_center  */
+
+/* #region bottom_right */
+    #bottom_right {
+        align-items: center;
+        justify-content: space-around;
+    }
+    #bottom_right span {
+        color: var(--light);
+    }
+
+    #bottom_right .player_bar {
+        width: 40%;
+        height: 2px;
+        background-color: var(--text);
+        border-radius: 20px;
+    }
+
+    #bottom_right .player_bar .listened {
+        height:100%;
+        width: 20%;
+        background-color: var(--light);
+    }
+
+/* #endregion bottom_right */
 /* #endregion bottom */
 
 

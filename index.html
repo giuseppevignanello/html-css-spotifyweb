@@ -55,7 +55,7 @@
                     <i class="fa-solid fa-backward-step fa-xs"></i>
                 </div>
                 <div id="play_button" class="col-2 text-center">
-                    <i class="fa-regular fa-circle-play"></i>
+                    <i class="fa-regular fa-circle-play fa-lg"></i>
                 </div>
                 <div id="right_buttons" class="col-4 d-flex">
                     <i class="fa-solid fa-forward-step fa-xs"></i>
@@ -68,13 +68,22 @@
         
             <div id="bottom_center_down" class="d-flex">
                 <span>0:25</span>
-                <div id="player_bar"></div>
+                <div class="player_bar">
+                    <div class="listened"> </div>
+                </div>
                 <span>4:34</span>
             </div>
         </div>
 
         <!-- /bottom_center -->
-        <div id="bottom_right" class="col-3 col-md-3 col-lg-2"></div>
+        <div id="bottom_right" class="col-3 col-md-3 col-lg-2 d-flex">
+            <span> <i class="fa-solid fa-list fa-xs"></i> </span>
+            <span><i class="fa-sharp fa-solid fa-desktop fa-xs"></i></span>
+            <span><i class="fas fa-volume-up fa-xs"></i></span>
+            <div class="player_bar">
+                <div class="listened"></div>
+            </div>
+        </div>
     </footer>
 
     <!-- /bottom -->
