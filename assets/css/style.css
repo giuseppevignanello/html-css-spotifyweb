@@ -64,6 +64,10 @@ img {
     width: calc(100% / 12 * 8);
 }
 
+.col-10 {
+    width: calc(100% / 12 * 10);
+}
+
 /* #endregion utilities  */
 /* #region top  */
 #top {
@@ -88,7 +92,9 @@ img {
     flex-direction: column;
     justify-content: space-between;
 }
-
+#sidebar h6 {
+    color: var(--light);
+}
 /* #region top_sidebar */
 #top_sidebar {
     padding-top: 0.5rem;
@@ -100,7 +106,6 @@ img {
 
 #top_sidebar .icon {
     width: 15px;
-    margin: 0 1rem;
 }
 
 #logo #logo_large {
@@ -116,12 +121,9 @@ img {
 /* #region playlist */
 #playlist {
     display: none;
-    margin: 1rem 1rem;
 }
 
-#playlist h6 {
-    color: var(--light);
-}
+
 #playlist #create_playlist {
     align-items: center;
 }
@@ -151,11 +153,44 @@ img {
 /* #endregion playlist */
 /* #endregion top_sidebar */
 
-
+/* #region bottom sidebar */
 
 #bottom_sidebar {
-    height: 50px;
+    height: 10%;
+    color: var(--text);
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0.5rem 0;
 }
+
+#bottom_sidebar .text, #bottom_sidebar hr {
+    display: none;
+}
+
+#bottom_sidebar_up span {
+    font-size: 0.6rem;
+}
+#bottom_sidebar_down {
+    align-items: center;
+    gap: 0.5rem;
+}
+#bottom_sidebar_down .user {
+    background-color: var(--text);
+    border-radius: 50%;
+}
+
+#bottom_sidebar_down .user img {
+    width: 80%;
+    aspect-ratio: 1;
+}
+
+
+
+#bottom_sidebar_down h6 {
+    display: none;
+}
+
+/* #endregion bottom sidebar */
 
 /* #endregion sidebar */
 /* #endregion top  */
@@ -287,10 +322,22 @@ img {
 
 /* #region 480px */
 @media screen and (min-width: 480px) {
+    /* #region utilities 480px */
+    .col-s-2 {
+        width: calc(100% / 12 * 2);
+    }
 
+    .col-s-4 {
+        width: calc(100% / 12 * 4);
+    }
+    /* #region top 480px */
+    #top {
+        height: calc(100vh - 80px)
+    }
     /* #region sidebar 480px */
     #sidebar {
         width: 180px;
+        padding: 0 1rem;
     }
 
     /* #region top_sidebar 480px */
@@ -299,10 +346,12 @@ img {
         align-items: start;
         gap: 0.5rem;
     }
-
+    #top_sidebar .icon {
+        margin-right: 0.5rem;
+    }
     
     #top_sidebar .icon_container {
-        display: flex
+        display: flex;
     }
 
     #logo #logo_small {
@@ -327,22 +376,37 @@ img {
 
     #bottom_sidebar {
         height: 60px;
+       
+    }
+    #bottom_sidebar_up {
+        display: flex;
+        align-items: center;
+        gap: 0.3rem;
     }
 
+    #bottom_sidebar .text, #bottom_sidebar hr {
+        display: block;
+    }
+
+    #bottom_sidebar_down h6 {
+        display: inline-block;
+    }
+    
     /* #endregion sidebar 480px */
 
     /* #region content 480px*/
     #content {
         width: calc(100% - 180px);
-        height: calc(100vh - 80px)
+       
     }
 
     /* #endregion content 480px*/
-
+    /* #region top 480px */
     /* #region bottom 480px */
     #bottom {
         height: 80px;
     }
+}
 
     /* #region bottom_left 480px*/
 
@@ -368,7 +432,7 @@ img {
     }
     /* #endregion bottom center 480px*/
     /* #endregion bottom 480px*/
-}
+
 
 /* #endregion 480px */
 
@@ -376,6 +440,7 @@ img {
 @media screen and (min-width: 768px) {
 
     /* #region utilities 768px */
+
 
     .container-md {
         width: 50%;
@@ -392,6 +457,10 @@ img {
     }
 
     /* #endregion utilities 768px */
+    /* #region top 768px */
+    #top {
+        height: calc(100vh - 90px)
+    }
     /* #region sidebar 768px */
 
     #top_sidebar {
@@ -405,12 +474,10 @@ img {
     /* #endregion sidebar 768px */
 
     /* #region content */
-    #content {
-        height: calc(100vh - 90px)
-    }
+   
 
     /* #endregion content */
-
+     /* #endregion top 768px */
     /* #region bottom */
     #bottom {
         height: 90px;
@@ -450,6 +517,12 @@ img {
     }
 
     /* #endregion utilities 1200px */
+
+    /* #region top 1200px */
+    #top {
+        height: calc(100vh - 100px)
+    }
+
     /* #region sidebar 1200px */
 
     #top_sidebar {
@@ -464,12 +537,10 @@ img {
     /* #endregion sidebar 1200px */
 
     /* #region content */
-    #content {
-        height: calc(100vh - 100px)
-    }
+   
 
     /* #endregion content */
-
+    /* #endregion top 1200px */
     /* #region bottom */
     #bottom {
         height: 100px;
