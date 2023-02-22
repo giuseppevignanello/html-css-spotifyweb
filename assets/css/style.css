@@ -66,12 +66,14 @@ img {
 
 /* #endregion utilities  */
 /* #region top  */
-
+#top {
+    height: calc(100vh - 70px);
+}
 /* #region content  */
 
 #content {
     background-color: var(--main);
-    height: calc(100vh - 70px);
+
     width: calc(100% - 30px);
     overflow-y: auto;
 }
@@ -98,7 +100,7 @@ img {
 
 #top_sidebar .icon {
     width: 15px;
-    margin: 0 0.5rem;
+    margin: 0 1rem;
 }
 
 #logo #logo_large {
@@ -111,7 +113,46 @@ img {
     color: var(--text);
     font-size: 0.6rem;
 }
+/* #region playlist */
+#playlist {
+    display: none;
+    margin: 1rem 1rem;
+}
+
+#playlist h6 {
+    color: var(--light);
+}
+#playlist #create_playlist {
+    align-items: center;
+}
+
+#playlist .add {
+    width: 30px;
+    aspect-ratio: 1;
+    background-color: var(--text);
+    margin: 0.3rem 0.3rem 0.3rem 0;
+    padding: 0.3rem;
+}
+#playlist_list {
+    height: 50%;
+    overflow-y: auto;
+}
+
+#playlist ul {
+    color: var(--text);
+    font-size: 0.6rem;
+    line-height: 1.5rem;
+   
+}
+
+#playlist li {
+    list-style: none;
+}
+/* #endregion playlist */
 /* #endregion top_sidebar */
+
+
+
 #bottom_sidebar {
     height: 50px;
 }
@@ -276,6 +317,13 @@ img {
         display: block;
     }
      /* #endregion top_sidebar 480px */
+
+    /* #region playlist 480px */
+    #playlist {
+        display: block;
+    }
+
+    /* #endregion playlist 480px */
 
     #bottom_sidebar {
         height: 60px;
