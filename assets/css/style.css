@@ -21,3 +21,60 @@ img {
 }
 
 /* #endregion general */
+
+/* #region debug */
+.debug #bottom {
+    background-color: red;
+}
+
+.debug #content {
+    background-color: blue;
+}
+
+.debug #top_sidebar {
+    background-color: #adff2f;
+}
+
+.debug #bottom_sidebar {
+    background-color: aqua;
+}
+/* #endregion debug */
+
+
+/* #region utilities  */
+.d-flex {
+    display: flex;
+}
+/* #endregion utilities  */
+/* #region top  */
+
+/* #region content  */
+
+#content {
+    height: calc(100vh - 70px);
+    width: calc(100% - 40px);
+}
+/* #endregion content  */
+
+/* #region sidebar */
+#sidebar {
+    width: 40px;
+}
+
+#top_sidebar {
+    height: calc(100% - 50px) ;
+}
+#bottom_sidebar {
+    height: 50px;
+}
+/* #endregion sidebar */
+/* #endregion top  */
+
+
+/* #region bottom */
+
+#bottom {
+    height: 70px;
+}
+
+/* #endregion bottom */
