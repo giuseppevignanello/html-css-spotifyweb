@@ -1,36 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./assets/css/style.css">
     <title>Spotify</title>
 </head>
-<body class="debug">
+
+<body>
     <div id="top" class="d-flex">
-       <div id="sidebar">
-        <div id="top_sidebar"></div>
-        <div id="bottom_sidebar"></div>
-       </div>
+        <div id="sidebar">
+            <div id="top_sidebar"></div>
+            <div id="bottom_sidebar"></div>
+        </div>
 
-       <!-- /sidebar -->
+        <!-- /sidebar -->
 
-       <main id="content">
+        <main id="content">
 
-       </main>
+        </main>
 
-       <!-- /content -->
+        <!-- /content -->
     </div>
     <!-- /top -->
 
     <footer id="bottom" class="d-flex">
-        <div id="bottom_left" class="col-4 col-md-3 col-lg-2"></div>
+        <div id="bottom_left" class="col-4 col-md-3 col-lg-2 d-flex">
+            <div class="song col-8 d-flex">
+                <div class="image col-6">
+                    <img src="./assets/img/sinister.jpeg" alt="sinister">
+                </div>
+                <div class="text col-6">
+                    <h6>Sinister</h6>
+                    <span>Brano</span>
+                    <span>Nome</span>
+                </div>
+            </div>
+            <div class="icons col-3 ">
+                <span> <i class="fa-regular fa-heart fa-xs"></i> </span>
+                <span> <i class="fa-regular fa-folder fa-xs"></i> </span>
+            </div>
+        </div>
+
+        <!-- /bottom_left -->
         <div id="bottom_center" class="col-4 col-md-5"></div>
         <div id="bottom_right" class="col-4 col-md-3 col-lg-2"></div>
-
     </footer>
 
     <!-- /bottom -->
 </body>
+
 </html>
