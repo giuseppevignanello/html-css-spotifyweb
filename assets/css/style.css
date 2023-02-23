@@ -26,19 +26,16 @@ img {
 
 /* #endregion general */
 
-/* #region debug */
-.debug #bottom div {
-    border: 1px solid red;
-}
-
-/* #endregion debug */
-
 
 /* #region utilities  */
 .d-flex {
     display: flex;
 }
 
+.container {
+    width: 90%;
+    margin: auto;
+}
 
 .text-center {
     text-align: center;
@@ -199,6 +196,10 @@ img {
     background-color: var(--upgrade);
     justify-content: flex-end;
     align-items: center;
+    position: sticky;
+    top: 0;
+    right: 0;
+
 }
 
 #upgrade_banner span {
@@ -210,7 +211,7 @@ img {
     margin: 0rem 0.5rem ;
 }
 /* #endregion upgrade banner */
-
+ 
 /* #region menu */
 
 .categories {
@@ -222,11 +223,36 @@ img {
     list-style: none;
     color: var(--text);
     font-size: 0.6rem;
-    padding: 0.8rem 0;
+    padding: 0.5rem 0;
 }
 
 /* #endregion menu */
 
+
+/* #region music */
+.music h3 {
+    color: var(--light);
+    margin: 1rem 0;
+}
+.music_content {
+    flex-wrap: wrap;
+    margin: 0 -1rem;
+}
+.music_content .item {
+    padding: 0.2rem 0.5rem;
+}
+
+.music_content .item .text h5 {
+    color: var(--light);
+    margin: 0.3rem 0;
+}
+
+.music_content .item .text span {
+    display: block;
+    color: var(--text);
+    font-size: 0.6rem;
+}
+/* #endregion music */
 /* #endregion content  */
 
 /* #endregion top  */
