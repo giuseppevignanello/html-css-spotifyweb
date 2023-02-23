@@ -649,12 +649,13 @@ img {
     /* #region sidebar 1200px */
 
     #top_sidebar {
-        height: calc(100% - 80px);
+        height: calc(100% - 65px);
        
     }
 
     #bottom_sidebar {
-        height: 80px;
+        height: 65px;
+        background-color: var(--sidebar);
     }
 
     /* #endregion sidebar 1200px */
@@ -686,4 +687,5 @@ img {
     }
     
 }
+
 /* #endregion 480px height */
