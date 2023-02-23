@@ -24,6 +24,19 @@ img {
     max-width: 100%;
 }
 
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: var(--text)
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(65, 65, 65)
+}
+
+
 /* #endregion general */
 
 
@@ -151,7 +164,7 @@ img {
 }
 
 #playlist_list {
-    height: 50%;
+    height: 30%;
     overflow-y: auto;
 }
 
