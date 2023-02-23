@@ -171,8 +171,8 @@ img {
     font-size: 0.6rem;
 }
 #bottom_sidebar_down {
+    justify-content: center;
     align-items: center;
-    gap: 0.5rem;
 }
 #bottom_sidebar_down .user {
     background-color: var(--text);
@@ -388,6 +388,10 @@ img {
         display: block;
     }
 
+    #bottom_sidebar_down {
+        justify-content: flex-start;
+    }
+
     #bottom_sidebar_down h6 {
         display: inline-block;
     }
@@ -554,3 +558,13 @@ img {
 
 /* #endregion 1200px */
 /* #endregion responsive */
+
+/* #region 480px height */
+@media screen and (max-height: 480px) {
+
+    #bottom_sidebar {
+        display: none;
+    }
+    
+}
+/* #endregion 480px height */
