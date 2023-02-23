@@ -222,18 +222,17 @@ img {
 
 /* #endregion sidebar */
 
-/* #region content  */
 
-#content {
+
+main {
     background-color: var(--main);
     width: calc(100% - 30px);
-    overflow-y: auto;
+    flex-direction: column;
 }
 
 /* #region upgrade banner */
 #upgrade_banner {
     width: 100%;
-    height: 50px;
     background-color: var(--upgrade);
     justify-content: flex-end;
     align-items: center;
@@ -241,6 +240,7 @@ img {
     top: 0;
     right: 0;
     z-index: 10000;
+    padding: 0.5rem;
 
 }
 
@@ -259,7 +259,11 @@ img {
 }
 
 /* #endregion upgrade banner */
+/* #region content  */
 
+#content {
+    overflow-y: auto;
+}
 /* #region menu */
 
 .categories {
@@ -524,21 +528,21 @@ img {
     color: var(--light);
 }
 
-#bottom_right .player_bar {
+#bottom_right .volume_bar {
     width: 40%;
     height: 4px;
     background-color: var(--text);
     border-radius: 20px;
 }
 
-#bottom_right .player_bar .listened {
+#bottom_right .volume_bar .volume {
     height: 100%;
     width: 20%;
     background-color: var(--light);
     position: relative;
 }
 
-#bottom_right .player_bar .listened i {
+#bottom_right .volume_bar .volume i {
     color: var(--light);
     position: absolute;
     top: 50%;
@@ -546,11 +550,11 @@ img {
     display: none;
 }
 
-#bottom_right .player_bar:hover .listened {
+#bottom_right .volume_bar:hover .volume {
     background-color: var(--highlighted);
 }
 
-#bottom_right .player_bar:hover .listened i {
+#bottom_right .volume_bar:hover .volume i {
     display: block;
 }
 
@@ -648,7 +652,7 @@ img {
 
     /* #endregion upgrade banner 480px */
     /* #region content 480px*/
-    #content {
+    main {
         width: calc(100% - 180px);
 
     }
@@ -846,5 +850,16 @@ img {
 }
 
 /* #endregion 480px height */
+
+/* #region 350px height */
+@media screen and (max-height: 350px) {
+
+    #upgrade_banner {
+        display: none;
+    }
+
+}
+
+/* #endregion 350px height */
 
 /* #endregion responsive */
