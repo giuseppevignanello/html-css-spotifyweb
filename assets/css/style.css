@@ -282,6 +282,7 @@ main {
 
 .categories .category:hover {
     color: var(--light);
+    cursor: pointer;
 }
 
 .categories .highlighted:after {
