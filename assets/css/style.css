@@ -234,24 +234,57 @@ img {
     color: var(--light);
     margin: 1rem 0;
 }
-.music_content {
+
+/* #region recently_played */
+.recently_played {
     flex-wrap: wrap;
     margin: 0 -1rem;
 }
-.music_content .item {
+.recently_played .item {
     padding: 0.2rem 0.5rem;
 }
 
-.music_content .item .text h5 {
+.recently_played .item .text h5 {
     color: var(--light);
     margin: 0.3rem 0;
 }
 
-.music_content .item .text span {
+.recently_played .item .text span {
     display: block;
     color: var(--text);
     font-size: 0.6rem;
 }
+
+/* #endregion recently_played */
+
+/* #region for you */
+.for_you h3, .popoular_artist h3 {
+    color: var(--light);
+    margin: 1rem 0 0.3rem 0;
+}
+
+.for_you span, .popoular_artist span {
+    color: var(--text);
+    font-size: 0.8rem;
+    margin-bottom: 0.5rem;
+}
+
+.for_you_content .item, .popoular_artist .item {
+    padding: 1rem 0.5rem
+}
+
+.for_you_content .text, .popoular_artist .text  {
+    color: var(--light);
+    padding: 0.5rem 0;
+}
+/* #endregion for you */
+
+/* #region popoular artist */
+
+.popoular_artist .image img {
+    border-radius: 50%;
+}
+/* #endregion popoular artist */
 /* #endregion music */
 /* #endregion content  */
 
