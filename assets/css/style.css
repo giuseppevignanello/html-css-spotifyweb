@@ -208,6 +208,7 @@ img {
     position: sticky;
     top: 0;
     right: 0;
+    z-index: 10000;
 
 }
 
@@ -267,6 +268,31 @@ img {
 .recently_played .item {
     padding: 0.2rem 0.5rem;
 }
+
+.recently_played .item .image,
+.for_you .item .image, 
+.popoular_artist .item .image{
+    position: relative;
+}
+
+.player_button {
+    color: var(--light);
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, -50%);
+    display: none;
+}
+
+.item .image:hover .player_button{
+    display: block;
+}
+
+.item .image:hover img{
+    opacity: 0.5;
+}
+
+
 
 .recently_played .item .text h5 {
     color: var(--light);
