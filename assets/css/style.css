@@ -251,7 +251,6 @@ main {
     width: 100%;
     background-color: var(--upgrade);
     justify-content: flex-end;
-    align-items: center;
     position: sticky;
     top: 0;
     right: 0;
@@ -497,10 +496,6 @@ main {
     color: var(--light);
 }
 
-#left_buttons,
-#right_buttons {
-    justify-content: space-around;
-}
 
 #bottom_center_up #play_button:hover {
     transform: scale(1.2);
@@ -560,9 +555,6 @@ main {
 /* #endregion bottom_center  */
 
 /* #region bottom_right */
-#bottom_right {
-    justify-content: space-around;
-}
 
 #bottom_right span {
     color: var(--light);
@@ -573,6 +565,7 @@ main {
     height: 4px;
     background-color: var(--text);
     border-radius: 20px;
+    margin-right: 2px;
 }
 
 #bottom_right .volume_bar .volume {
