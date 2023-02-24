@@ -24,6 +24,10 @@ img {
     max-width: 100%;
 }
 
+a {
+    text-decoration: none;
+}
+
 ::-webkit-scrollbar {
     width: 10px;
 }
@@ -259,12 +263,15 @@ main {
 }
 
 #upgrade_banner span {
-    color: var(--light);
     border: 1px solid var(--light);
     padding: 0.5rem 2rem;
     border-radius: 50px;
     font-size: 0.6rem;
     margin: 0rem 0.5rem;
+}
+
+#upgrade_banner span a {
+    color: var(--light);
 }
 
 #upgrade_banner span:hover {
@@ -288,7 +295,6 @@ main {
 
 .categories .category {
     list-style: none;
-    color: var(--text);
     font-size: 0.6rem;
     padding: 0.8rem 0;
     font-weight: bold;
@@ -297,7 +303,6 @@ main {
 
 .categories .category a {
     color: var(--text);
-    text-decoration: none;
 
 }
 
