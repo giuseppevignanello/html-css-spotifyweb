@@ -186,6 +186,7 @@ a {
 
 #playlist li:hover {
     color: var(--light);
+    cursor: pointer;
 }
 
 /* #endregion playlist */
