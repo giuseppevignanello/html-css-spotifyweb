@@ -330,6 +330,10 @@ main {
     margin: 1rem 0;
 }
 
+
+
+/* #region music_content */
+
 /* #region recently_played */
 #recently_played {
     flex-wrap: wrap;
@@ -341,12 +345,27 @@ main {
 }
 
 
-#recently_played .item .image,
-#for_you .item .image,
-#podcast .item .image,
-#mood .item .image,
-#classifiche .item .image,
-#popoular_artist .item .image {
+
+
+
+#recently_played .item .text h5 {
+    color: var(--light);
+    margin: 0.3rem 0;
+}
+
+#recently_played .item .text span {
+    display: block;
+    color: var(--text);
+    font-size: 0.6rem;
+}
+
+/* #endregion recently_played */
+
+.row {
+    position: relative
+}
+
+.row .item .image {
     position: relative;
 }
 
@@ -383,44 +402,12 @@ main {
 }
 
 
-
-#recently_played .item .text h5 {
-    color: var(--light);
-    margin: 0.3rem 0;
-}
-
-#recently_played .item .text span {
-    display: block;
-    color: var(--text);
-    font-size: 0.6rem;
-}
-
-/* #endregion recently_played */
-
-/* #region music_content */
-#for_you,
-#podcast,
-#mood,
-#classifiche,
-#popoular_artist {
-    position: relative
-}
-
-
-#for_you h3,
-#podcast h3,
-#mood h3,
-#classifiche h3,
-#popoular_artist h3 {
+.row h3 {
     color: var(--light);
     margin: 1rem 0 0.3rem 0;
 }
 
-#for_you span,
-#podcast span,
-#mood span,
-#classifiche span,
-#popoular_artist span {
+.row span {
     color: var(--text);
     font-size: 0.8rem;
     margin-bottom: 0.5rem;
@@ -434,14 +421,10 @@ main {
     padding: 1rem 0.5rem
 }
 
-.music_content .text,
-#popoular_artist .text {
+.row .text{
     color: var(--light);
     padding: 0.5rem 0;
 }
-
-/* #endregion music_content */
-
 /* #region popoular artist */
 
 #popoular_artist .image img {
@@ -449,6 +432,9 @@ main {
 }
 
 /* #endregion popoular artist */
+/* #endregion music_content */
+
+
 /* #endregion music */
 /* #endregion content  */
 
