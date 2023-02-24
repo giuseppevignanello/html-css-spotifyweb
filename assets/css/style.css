@@ -222,6 +222,7 @@ a {
 #bottom_sidebar_down .user {
     background-color: var(--text);
     border-radius: 50%;
+    margin: 5px;
 }
 
 #bottom_sidebar_down .user img {
@@ -659,6 +660,7 @@ main {
 
     #bottom_sidebar {
         height: 60px;
+        align-items: normal;
 
     }
 
@@ -677,6 +679,10 @@ main {
 
     #bottom_sidebar_down h6 {
         display: inline-block;
+    }
+
+    #bottom_sidebar_down .user {
+        margin: 5px 5px 5px 0;
     }
 
     /* #endregion sidebar 480px */
