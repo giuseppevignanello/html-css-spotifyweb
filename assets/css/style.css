@@ -63,6 +63,10 @@ a {
     align-items: center;
 }
 
+.flex-column {
+    flex-direction: column;
+}
+
 .col-2 {
     width: calc(100% / 12 * 2);
 }
@@ -99,7 +103,6 @@ a {
     background-color: var(--sidebar);
     width: 30px;
     overflow-y: hidden;
-    flex-direction: column;
     justify-content: space-between;
 }
 
@@ -111,7 +114,6 @@ a {
 #top_sidebar {
     padding-top: 0.5rem;
     height: calc(100% - 50px);
-    flex-direction: column;
     justify-content: flex-start;
 }
 
@@ -194,7 +196,6 @@ a {
 #bottom_sidebar {
     height: 10%;
     color: var(--text);
-    flex-direction: column;
     justify-content: space-between;
     margin: 0.5rem 0;
 }
@@ -242,7 +243,6 @@ a {
 main {
     background-color: var(--main);
     width: calc(100% - 30px);
-    flex-direction: column;
 }
 
 /* #region upgrade banner */
@@ -497,7 +497,6 @@ main {
 
 #bottom_center {
     height: 100%;
-    flex-direction: column;
     justify-content: space-evenly;
 }
 
