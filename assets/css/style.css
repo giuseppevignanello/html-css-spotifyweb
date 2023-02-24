@@ -99,6 +99,7 @@ a {
 /* #region top  */
 #top {
     height: calc(100vh - 70px);
+    
 }
 
 /* #region sidebar */
@@ -283,6 +284,7 @@ main {
 
 #content {
     overflow-y: auto;
+    overflow-x: hidden;
 }
 
 /* #region menu */
