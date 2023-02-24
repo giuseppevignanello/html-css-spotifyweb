@@ -330,23 +330,37 @@ main {
 }
 
 /* #region recently_played */
-.recently_played {
+#recently_played {
     flex-wrap: wrap;
     margin: 0 -1rem;
 }
 
-.recently_played .item {
+#recently_played .item {
     padding: 0.2rem 0.5rem;
 }
 
 
-.recently_played .item .image,
-.for_you .item .image,
+#recently_played .item .image,
+#for_you .item .image,
 #podcast .item .image,
 #mood .item .image,
 #classifiche .item .image,
-.popoular_artist .item .image {
+#popoular_artist .item .image {
     position: relative;
+}
+
+.come_back_up {
+    aspect-ratio: 2;
+    border: 2px solid var(--light);
+    border-radius: 50%;
+    padding: 0.5rem;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.come_back_up a {
+    color: var(--light);
 }
 
 .player_button {
@@ -369,12 +383,12 @@ main {
 
 
 
-.recently_played .item .text h5 {
+#recently_played .item .text h5 {
     color: var(--light);
     margin: 0.3rem 0;
 }
 
-.recently_played .item .text span {
+#recently_played .item .text span {
     display: block;
     color: var(--text);
     font-size: 0.6rem;
@@ -383,21 +397,29 @@ main {
 /* #endregion recently_played */
 
 /* #region music_content */
+#for_you,
+#podcast,
+#mood,
+#classifiche,
+#popoular_artist {
+    position: relative
+}
 
-.for_you h3,
+
+#for_you h3,
 #podcast h3,
 #mood h3,
 #classifiche h3,
-.popoular_artist h3 {
+#popoular_artist h3 {
     color: var(--light);
     margin: 1rem 0 0.3rem 0;
 }
 
-.for_you span,
+#for_you span,
 #podcast span,
 #mood span,
 #classifiche span,
-.popoular_artist span {
+#popoular_artist span {
     color: var(--text);
     font-size: 0.8rem;
     margin-bottom: 0.5rem;
@@ -407,12 +429,12 @@ main {
     flex-wrap: wrap;
 }
 .music_content .item,
-.popoular_artist .item {
+#popoular_artist .item {
     padding: 1rem 0.5rem
 }
 
 .music_content .text,
-.popoular_artist .text {
+#popoular_artist .text {
     color: var(--light);
     padding: 0.5rem 0;
 }
@@ -421,7 +443,7 @@ main {
 
 /* #region popoular artist */
 
-.popoular_artist .image img {
+#popoular_artist .image img {
     border-radius: 50%;
 }
 
