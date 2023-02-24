@@ -694,6 +694,10 @@ main {
 
     }
 
+    #content {
+        overflow-x: hidden;
+    }
+
     /* #endregion content 480px*/
     /* #endregion top 480px */
     /* #region bottom 480px */
