@@ -59,6 +59,10 @@ a {
     text-align: center;
 }
 
+.align-items-center {
+    align-items: center;
+}
+
 .col-2 {
     width: calc(100% / 12 * 2);
 }
@@ -108,13 +112,9 @@ a {
     padding-top: 0.5rem;
     height: calc(100% - 50px);
     flex-direction: column;
-    align-items: center;
     justify-content: flex-start;
 }
 
-#top_sidebar .icon_container {
-    align-items: center;
-}
 
 #top_sidebar .icon_container:hover span {
     color: var(--light);
@@ -146,9 +146,6 @@ a {
 }
 
 
-#playlist #create_playlist {
-    align-items: center;
-}
 
 #playlist .add {
     width: 30px;
@@ -218,7 +215,6 @@ a {
 
 #bottom_sidebar_down {
     justify-content: center;
-    align-items: center;
 }
 
 #bottom_sidebar_down .user {
@@ -441,7 +437,6 @@ main {
     background-color: var(--footer);
     height: 70px;
     justify-content: space-between;
-    align-items: center;
     position: fixed;
     bottom: 0;
     right: 0;
@@ -452,12 +447,10 @@ main {
 /* #region bottom_left */
 #bottom_left {
     justify-content: space-between;
-    align-items: center;
 }
 
 #bottom_left .song {
     justify-content: space-between;
-    align-items: center;
 
 }
 
@@ -510,7 +503,6 @@ main {
 
 #bottom_center_up {
     justify-content: space-between;
-    align-items: center;
     color: var(--light);
 }
 
@@ -524,7 +516,6 @@ main {
 }
 
 #bottom_center_down {
-    align-items: center;
     justify-content: space-between;
 }
 
@@ -582,7 +573,6 @@ main {
 
 /* #region bottom_right */
 #bottom_right {
-    align-items: center;
     justify-content: space-around;
 }
 
@@ -692,8 +682,6 @@ main {
     }
 
     #bottom_sidebar_up {
-        display: flex;
-        align-items: center;
         gap: 0.3rem;
     }
 
