@@ -67,6 +67,9 @@ a {
     flex-direction: column;
 }
 
+.space-between {
+    justify-content: space-between;
+}
 .col-2 {
     width: calc(100% / 12 * 2);
 }
@@ -103,7 +106,6 @@ a {
     background-color: var(--sidebar);
     width: 30px;
     overflow-y: hidden;
-    justify-content: space-between;
 }
 
 #sidebar h6 {
@@ -196,7 +198,6 @@ a {
 #bottom_sidebar {
     height: 10%;
     color: var(--text);
-    justify-content: space-between;
     margin: 0.5rem 0;
 }
 
@@ -436,7 +437,6 @@ main {
 #bottom {
     background-color: var(--footer);
     height: 70px;
-    justify-content: space-between;
     position: fixed;
     bottom: 0;
     right: 0;
@@ -445,14 +445,7 @@ main {
 
 
 /* #region bottom_left */
-#bottom_left {
-    justify-content: space-between;
-}
 
-#bottom_left .song {
-    justify-content: space-between;
-
-}
 
 #bottom_left .song .text {
     line-height: 0.7rem;
@@ -501,7 +494,6 @@ main {
 }
 
 #bottom_center_up {
-    justify-content: space-between;
     color: var(--light);
 }
 
@@ -514,9 +506,6 @@ main {
     transform: scale(1.2);
 }
 
-#bottom_center_down {
-    justify-content: space-between;
-}
 
 #bottom_center_down span {
     color: var(--light);
