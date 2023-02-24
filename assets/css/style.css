@@ -295,7 +295,13 @@ main {
     position: relative;
 }
 
-.categories .category:hover {
+.categories .category a {
+    color: var(--text);
+    text-decoration: none;
+
+}
+
+.categories .category:hover a {
     color: var(--light);
     cursor: pointer;
 }
@@ -330,8 +336,12 @@ main {
     padding: 0.2rem 0.5rem;
 }
 
+
 .recently_played .item .image,
 .for_you .item .image,
+#podcast .item .image,
+#mood .item .image,
+#classifiche .item .image,
 .popoular_artist .item .image {
     position: relative;
 }
@@ -369,32 +379,42 @@ main {
 
 /* #endregion recently_played */
 
-/* #region for you */
+/* #region music_content */
+
 .for_you h3,
+#podcast h3,
+#mood h3,
+#classifiche h3,
 .popoular_artist h3 {
     color: var(--light);
     margin: 1rem 0 0.3rem 0;
 }
 
 .for_you span,
+#podcast span,
+#mood span,
+#classifiche span,
 .popoular_artist span {
     color: var(--text);
     font-size: 0.8rem;
     margin-bottom: 0.5rem;
 }
 
-.for_you_content .item,
+.music_content {
+    flex-wrap: wrap;
+}
+.music_content .item,
 .popoular_artist .item {
     padding: 1rem 0.5rem
 }
 
-.for_you_content .text,
+.music_content .text,
 .popoular_artist .text {
     color: var(--light);
     padding: 0.5rem 0;
 }
 
-/* #endregion for you */
+/* #endregion music_content */
 
 /* #region popoular artist */
 
