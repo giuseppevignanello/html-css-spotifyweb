@@ -223,6 +223,7 @@ a {
     background-color: var(--text);
     border-radius: 50%;
     margin: 5px;
+    padding: 1px;
 }
 
 #bottom_sidebar_down .user img {
